@@ -4,15 +4,26 @@
 
 Console.Write("Введите число N: ");
 int number_2 = Convert.ToInt32(Console.ReadLine());
-int number_1 = 1;
 
-for (int i = number_1; i <= number_2; i++)
-    {
-    if (i % 2 == 0) 
+for (int i = 2; i <= number_2; i = i + 2)
+{
+    if (i % 2 == 0)
     {
         Console.Write(i + " ");
     }
+}
+
+Console.Write("Введите число N: ");
+int number_2 = Convert.ToInt32(Console.ReadLine());
+int i  = 2;
+while (i <= number_2)
+{
+    if (i % 2 == 0)
+    {
+        Console.Write(i + " ");
     }
-     
-    
+i = i + 2;
+}
+
+
 
