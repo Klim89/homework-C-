@@ -2,7 +2,8 @@
 // 4 -> да
 // -3 -> нет
 // 7 -> нет
-
+void Zadacha02()
+{
 Console.Write("Введите число: ");
 int number = Convert.ToInt32(Console.ReadLine());
 
@@ -14,3 +15,5 @@ else
 {
     Console.WriteLine(number + " - нечетное число");
 }
+}
+Zadacha02();
