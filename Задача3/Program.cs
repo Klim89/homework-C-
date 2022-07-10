@@ -2,28 +2,45 @@
 // 5 -> 2, 4
 // 8 -> 2, 4, 6, 8
 
-Console.Write("Введите число N: ");
-int number_2 = Convert.ToInt32(Console.ReadLine());
-
-for (int i = 2; i <= number_2; i = i + 2)
+void Zadacha03_1()
 {
-    if (i % 2 == 0)
+    Console.Write("Введите число N: ");
+    int number2 = Convert.ToInt32(Console.ReadLine());
+    if (number2 == 1)
     {
-        Console.Write(i + " ");
+        Console.WriteLine(" Введено неверное число");
+    }
+    for (int i = 2; i <= number2; i = i + 2)
+    {
+        if (i % 2 == 0)
+        {
+            Console.Write(i + " ");
+        }
     }
 }
 
-Console.Write("Введите число N: ");
-int number_2 = Convert.ToInt32(Console.ReadLine());
-int i  = 2;
-while (i <= number_2)
+
+void Zadacha03_2()
 {
-    if (i % 2 == 0)
+    Console.Write("Введите число N: ");
+    int number2 = Convert.ToInt32(Console.ReadLine());
+    int i = 2;
+    if (number2 == 1)
     {
-        Console.Write(i + " ");
+        Console.WriteLine(" Введено неверное число");
     }
-i = i + 2;
+    
+    while (i <= number2)
+    {
+        if (i % 2 == 0)
+        {
+            Console.Write(i + " ");
+        }
+        i = i + 2;
+    }
 }
 
 
+//Zadacha03_1();
+Zadacha03_2();
 
