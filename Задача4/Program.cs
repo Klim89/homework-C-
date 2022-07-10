@@ -25,9 +25,6 @@ void Zadacha04_1()
     Console.WriteLine("Максимальное число = " + max);
 }
 
-//Zadacha04_1();
-
-
 
 void Zadacha04_2()
 {
@@ -51,4 +48,6 @@ int Max(int arg1, int arg2, int arg3)
    return result;
 }
 
+
+//Zadacha04_1();
 Zadacha04_2();
