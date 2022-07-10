@@ -3,22 +3,52 @@
 // 44 5 78 -> 78
 // 22 3 9 -> 22
 
-Console.Write("Введите число 1: ");
-int number_1 = Convert.ToInt32(Console.ReadLine());
-Console.Write("Введите число 2: ");
-int number_2 = Convert.ToInt32(Console.ReadLine());
-Console.Write("Введите число 3: ");
-int number_3 = Convert.ToInt32(Console.ReadLine());
+void Zadacha04_1()
+{
+    Console.Write("Введите число 1: ");
+    int number1 = Convert.ToInt32(Console.ReadLine());
+    Console.Write("Введите число 2: ");
+    int number2 = Convert.ToInt32(Console.ReadLine());
+    Console.Write("Введите число 3: ");
+    int number3 = Convert.ToInt32(Console.ReadLine());
+    int max = number1;
 
-if (number_1 > number_2 && number_1 > number_3)
-{
-Console.WriteLine("Максимальное число = " + number_1); 
+    if (number2 > max)
+    {
+        max = number2;
+    }
+    if (number3 > max)
+    {
+        max = number3;
+    }
+
+    Console.WriteLine("Максимальное число = " + max);
 }
-else if (number_2 > number_3)
+
+//Zadacha04_1();
+
+
+
+void Zadacha04_2()
 {
-Console.WriteLine("Максимальное число = " + number_2);
+  Console.Write("Введите число 1: ");
+    int number1 = Convert.ToInt32(Console.ReadLine());
+    Console.Write("Введите число 2: ");
+    int number2 = Convert.ToInt32(Console.ReadLine());
+    Console.Write("Введите число 3: ");
+    int number3 = Convert.ToInt32(Console.ReadLine());
+
+int max = Max(number1,number2,number2);
+
+Console.WriteLine("Максимальное число = " + max);
 }
-else
+
+int Max(int arg1, int arg2, int arg3)
 {
-Console.WriteLine("Максимальное число = " + number_3);
+   int result = arg1;
+   if (arg2>result) result = arg2;
+   if (arg3>result) result = arg3;
+   return result;
 }
+
+Zadacha04_2();
