@@ -3,6 +3,8 @@
 // a = 2 b = 10 -> max = 10
 // a = -9 b = -3 -> max = -3
 
+void Zadacha01()
+{
 Console.Write("Введите число 1: ");
 int number_1 = Convert.ToInt32(Console.ReadLine());
 Console.Write("Введите число 2: ");
@@ -23,4 +25,6 @@ else
     Console.WriteLine(number_1  + " - Наибольшее число");
     Console.WriteLine(number_2  + " - Наименьшее число");
 }
+}
 
+Zadacha01();
