@@ -17,7 +17,7 @@ void Zadacha6()
     }
     else
     {
-    Console.WriteLine("Третья цифра отсутствует, введено некорректное число");
+    Console.WriteLine("Третья цифра отсутствует");
     }
 }
 Zadacha6();
