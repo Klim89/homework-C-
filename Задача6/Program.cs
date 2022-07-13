@@ -10,14 +10,14 @@ void Zadacha6()
     Console.Write("Введите число: ");
     int number = Convert.ToInt32(Console.ReadLine());
     string numberText = Convert.ToString(number);
-    
+
     if (numberText.Length > 2)
     {
-    Console.WriteLine("Третья цифра числа = " + numberText[2]);
+        Console.WriteLine("Третья цифра числа = " + numberText[2]);
     }
     else
     {
-    Console.WriteLine("Третья цифра отсутствует");
+        Console.WriteLine("Третья цифра отсутствует");
     }
 }
 Zadacha6();
