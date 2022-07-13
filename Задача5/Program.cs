@@ -13,7 +13,7 @@ void Zadacha5()
     int tens = number / 10;
     int hungs = number / 100;
 
-    if (number > 100 && number < 1000)
+    if (number > 99 && number < 1000)
     {
     int resultNumber = tens - hungs * 10;
     Console.WriteLine("Вторая цифра трехзначного числа = " + resultNumber);
