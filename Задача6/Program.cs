@@ -8,10 +8,9 @@
 /*void Zadacha6()
 {
     Console.Write("Введите число: ");
-    int number = Convert.ToInt32(Console.ReadLine());
-    string numberText = Convert.ToString(number);
+    string number = Console.ReadLine();
 
-    if (numberText.Length > 2)
+    if (number.Length > 2)
     {
         Console.WriteLine("Третья цифра числа = " + numberText[2]);
     }
@@ -27,7 +26,7 @@ void Zadacha6_1()
 {
     Console.Write("Введите число: ");
     int number = Convert.ToInt32(Console.ReadLine());
-
+    int number = Math.Abs(number);
     if (number > 99)
     {
         int result = Temp(number);
@@ -43,7 +42,7 @@ Zadacha6_1();
 
 int Temp(int number)
 {
-    while (number >= 1000) number = number / 10; 
+    while (number > 999) number /= 10; 
     int temp = number % 10;
     return temp;
 }
