@@ -14,7 +14,7 @@ void Zadacha7()
     {
         Console.WriteLine(number + " - выходной день");
     }
-    else if (number < 6)
+    else if (number >= 1 && number <= 5)
     {
         Console.WriteLine(number + " - будний день");
     }

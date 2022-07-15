@@ -15,7 +15,7 @@ void Zadacha5()
 
     if (number > 99 && number < 1000)
     {
-    int resultNumber = tens - hungs * 10;
+    int resultNumber = tens - hungs * 10; // number/ 10 % 10
     Console.WriteLine("Вторая цифра трехзначного числа = " + resultNumber);
     }
     else 
